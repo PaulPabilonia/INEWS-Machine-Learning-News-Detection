@@ -11,13 +11,17 @@ To install the application, follow the steps below:
 ```git clone https://github.com/PaulPabilonia/CSA08-INEWS.git```
 
 # Install frontend dependencies
-```cd frontend
-npm install```
+```
+cd frontend
+npm install
+```
 
 # Install backend dependencies
-```cd ../backend
+```
+cd ../backend
 python -m venv env
 source env/bin/activate
-pip install -r requirements.txt```
+pip install -r requirements.txt
+```
 
 
