@@ -46,6 +46,7 @@ http://localhost:5173
 Here are some screenshots of the iNEWS application:
 
 1. Landing Page
+<img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/Screenshot_20230130_103724.png" width="100" height="100"/>
 ![Landing Page](https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/Screenshot_20230130_103724.png)
 2. Home Page
 ![Home Page](https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/Screenshot_20230111_092204.png)
