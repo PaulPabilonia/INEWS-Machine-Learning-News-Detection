@@ -48,6 +48,7 @@ Here are some screenshots of the iNEWS application:
 1. Landing Page
 
 <img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/Screenshot_20230130_103724.png" height="250"/>
+
 2. Home Page
 
 <img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/Screenshot_20230111_092204.png" height="250"/>
