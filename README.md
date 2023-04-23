@@ -4,7 +4,7 @@ iNEWS: A WEB APPLICATION FOR FAKE NEWS DETECTION USING MACHINE LEARNING TECHNIQU
 # Introduction
 iNEWS is a web application that utilizes machine learning techniques to detect fake news articles. The application is built using React-Vite for the frontend and Django Rest Framework for the backend. The machine learning models used in the application are Naive Bayes, SVM, and LSTM.
 
-##Installation
+## Installation
 To install the application, follow the steps below:
 
 ### 1. Clone the repository
