@@ -52,40 +52,40 @@ Here are some screenshots of the iNEWS application:
     <td>2. Home (URL Feature) Page</td>
   </tr>
   <tr>
-    <td><img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/landing_page.png"></td>
-    <td><img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/home_url_page.png"></td>
+    <td><img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/landing_page.png" height="250" ></td>
+    <td><img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/home_url_page.png" height="250" ></td>
   </tr>
   <tr>
     <td>Home (TEXT Feature) Page</td>
     <td>Home (DOCX Feature) Page</td>
   </tr>
   <tr>
-    <td><img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/home_text_page.png"></td>
-    <td><img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/home_docs_page.png"></td>
+    <td><img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/home_text_page.png" height="250"></td>
+    <td><img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/home_docs_page.png" height="250"></td>
   </tr>
   <tr>
     <td>Sign In Page</td>
     <td>Sign Up Page</td>
   </tr>
   <tr>
-    <td><img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/login_page.png"></td>
-    <td><img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/signup_page.png"></td>
+    <td><img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/login_page.png" height="250"></td>
+    <td><img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/signup_page.png height="250""></td>
   </tr>
   <tr>
     <td>Commnunity Page</td>
     <td>News Feed Page</td>
   </tr>
   <tr>
-    <td><img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/community_page.png"></td>
-    <td><img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/newsfeed_page.png"></td>
+    <td><img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/community_page.png" height="250"></td>
+    <td><img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/newsfeed_page.png" height="250"></td>
   </tr>
    <tr>
     <td>About Page</td>
     <td>How It Work Page</td>
   </tr>
   <tr>
-    <td><img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/about_page.png"></td>
-    <td><img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/how_page.png"></td>
+    <td><img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/about_page.png" height="250"></td>
+    <td><img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/how_page.png" height="250"></td>
   </tr>
 </table>
 
@@ -93,6 +93,7 @@ Here are some screenshots of the iNEWS application:
 - Paul Wilfred Pabilonia (@PaulPabilonia12)
 - Ermcharles P. Pailan (@ermcharles06)
 - Jessa May D. Ubaldo (@ujessamay)
+<img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/team_page.png" height="250">
 
 ## License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
