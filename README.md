@@ -63,6 +63,10 @@ Here are some screenshots of the iNEWS application:
 
 <table>
   <tr>
+    <td>1. Landing Page </td>
+    <td>2. Home (URL Feature) Page</td>
+  </tr>
+  <tr>
     <td><img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/Screenshot_20230130_103724.png"></td>
     <td><img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/Screenshot_20230111_092204.png"></td>
   </tr>
