@@ -7,16 +7,16 @@ iNEWS is a web application that utilizes machine learning techniques to detect f
 Installation
 To install the application, follow the steps below:
 
-# Clone the repository
+## 1. Clone the repository
 ```git clone https://github.com/PaulPabilonia/CSA08-INEWS.git```
 
-# Install frontend dependencies
+## 2. Install frontend dependencies
 ```
 cd frontend
 npm install
 ```
 
-# Install backend dependencies
+## 3. Install backend dependencies
 ```
 cd ../backend
 python -m venv env
