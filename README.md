@@ -69,7 +69,7 @@ Here are some screenshots of the iNEWS application:
   </tr>
   <tr>
     <td><img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/login_page.png" height="250"></td>
-    <td><img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/signup_page.png height="250""></td>
+    <td><img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/signup_page.png" height="250"></td>
   </tr>
   <tr>
     <td>Commnunity Page</td>
