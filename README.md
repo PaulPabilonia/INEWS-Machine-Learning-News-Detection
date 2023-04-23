@@ -49,7 +49,15 @@ Here are some screenshots of the iNEWS application:
 
 <img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/Screenshot_20230130_103724.png" height="250"/>
 
-2. Home Page
+2. Home (URL Feature) Page
+
+<img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/Screenshot_20230111_092204.png" height="250"/>
+
+3. Home (TEXT Feature) Page
+
+<img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/Screenshot_20230130_103724.png" height="250"/>
+
+4. Home (DOCX Feature) Page
 
 <img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/Screenshot_20230111_092204.png" height="250"/>
 
