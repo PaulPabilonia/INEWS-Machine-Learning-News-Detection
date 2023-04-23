@@ -50,9 +50,9 @@ Screenshot 1
 Screenshot 2
 
 ## Contributors
-Paul Wilfred Pabilonia (@PaulPabilonia12)
-Ermcharles P. Pailan (@ermcharles06)
-Jessa May D. Ubaldo (@ujessamay)
+- Paul Wilfred Pabilonia (@PaulPabilonia12)
+- Ermcharles P. Pailan (@ermcharles06)
+- Jessa May D. Ubaldo (@ujessamay)
 
 ### License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
