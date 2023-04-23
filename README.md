@@ -45,21 +45,6 @@ http://localhost:5173
 ## Screenshots
 Here are some screenshots of the iNEWS application:
 
-1. Landing Page
-
-<img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/Screenshot_20230130_103724.png" height="250"/>
-
-2. Home (URL Feature) Page
-
-<img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/Screenshot_20230111_092204.png" height="250"/>
-
-3. Home (TEXT Feature) Page
-
-<img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/Screenshot_20230130_103724.png" height="250"/>
-
-4. Home (DOCX Feature) Page
-
-<img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/Screenshot_20230111_092204.png" height="250"/>
 
 <table>
   <tr>
@@ -71,8 +56,8 @@ Here are some screenshots of the iNEWS application:
     <td><img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/Screenshot_20230111_092204.png"></td>
   </tr>
   <tr>
-    <td><img src="./images/image3.png"></td>
-    <td><img src="./images/image4.png"></td>
+    <td>Home (TEXT Feature) Page</td>
+    <td>Home (DOCX Feature) Page</td>
   </tr>
 </table>
 
