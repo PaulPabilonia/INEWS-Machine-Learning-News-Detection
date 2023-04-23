@@ -94,7 +94,6 @@ Here are some screenshots of the iNEWS application:
 <table>
   <tr>
     <td><img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/main/images/landing_mobile.png" height="250"></td>
-    <td><img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/main/images/login_mobile.png" height="250"></td>
     <td><img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/main/images/home_mobile.png" height="250"></td>
     <td><img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/main/images/result_mobile.png" height="250"></td>
     </tr>
