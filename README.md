@@ -61,6 +61,17 @@ Here are some screenshots of the iNEWS application:
 
 <img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/Screenshot_20230111_092204.png" height="250"/>
 
+<table>
+  <tr>
+    <td><img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/Screenshot_20230130_103724.png"></td>
+    <td><img src="https://github.com/PaulPabilonia/CSA08-INEWS/blob/master/images/Screenshot_20230111_092204.png"></td>
+  </tr>
+  <tr>
+    <td><img src="./images/image3.png"></td>
+    <td><img src="./images/image4.png"></td>
+  </tr>
+</table>
+
 ## Contributors
 - Paul Wilfred Pabilonia (@PaulPabilonia12)
 - Ermcharles P. Pailan (@ermcharles06)
