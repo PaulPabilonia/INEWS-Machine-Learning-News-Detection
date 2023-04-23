@@ -24,4 +24,37 @@ source env/bin/activate
 pip install -r requirements.txt
 ```
 
+## Usage
+To start the application, follow the steps below:
+1. Start the backend server:
+```
+cd backend
+source env/bin/activate
+python manage.py runserver
+```
+2. Start the frontend server:
+```
+cd frontend
+npm run dev
+```
+3. Open the application in your browser:
+```
+http://localhost:3000
+```
+
+## Screenshots
+Here are some screenshots of the iNEWS application:
+
+Screenshot 1
+
+Screenshot 2
+
+## Contributors
+Paul Wilfred Pabilonia (@PaulPabilonia12)
+Ermcharles P. Pailan (@ermcharles06)
+Jessa May D. Ubaldo (@ujessamay)
+
+### License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
+
 
