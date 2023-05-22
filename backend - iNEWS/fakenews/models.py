@@ -92,3 +92,14 @@ class Comments(models.Model):
 
     def __str__(self):
         return f"{self.commentor.username} : {self.text}" 
+    
+
+class ManualCheck(models.Model):
+    news_prediction = models.ForeignKey(NewsPrediction, on_delete=models.CASCADE, related_name="article",null=True, blank=True, default=None)
+    verdict = models.CharField(max_length = 500,null=True,  blank=True)
+    evidence = models.CharField(max_length = 500,null=True,  blank=True)
+
+class Sentence(models.Model):
+    manual_check = models.ForeignKey(ManualCheck, on_delete=models.CASCADE, related_name='sentences')
+    verdict = models.CharField(max_length = 500,null=True,  blank=True)
+    sentence = models.CharField(max_length = 500,null=True,  blank=True)

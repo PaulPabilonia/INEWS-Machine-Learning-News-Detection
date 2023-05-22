@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
-from fakenews.models import NewsPrediction, User, Comments, Sentiment, Linguistic
-from .serializers import NewsPredictionSerializers, UserSerializer, RegisterSerializer, CommentsSerializers, SentimentSerializers, LinguisticSerializers
+from fakenews.models import NewsPrediction, User, Comments, Sentiment, Linguistic, ManualCheck,Sentence
+from .serializers import NewsPredictionSerializers, UserSerializer, RegisterSerializer, CommentsSerializers, SentimentSerializers, LinguisticSerializers, ManualCheckSerializer
 from rest_framework import generics
 from rest_framework import status
 from rest_framework.parsers import MultiPartParser, JSONParser, FormParser, FileUploadParser
@@ -359,3 +359,59 @@ class NewsSearch(APIView):
             return Response(urls)
         else:
             return Response({'error': 'No query parameter provided.'})
+
+class ManualCheckAPIView(generics.ListCreateAPIView):
+    permission_classes = (AllowAny,)
+    serializer_class = ManualCheckSerializer
+
+    def perform_create(self, serializer):
+        news_prediction_id = self.request.parser_context['kwargs']['news_prediction_id']
+        news_prediction = NewsPrediction.objects.get(pk=news_prediction_id)
+        serializer.save(news_prediction=news_prediction)
+
+    def get_queryset(self):
+        news_prediction_id = self.request.parser_context['kwargs']['news_prediction_id']
+        queryset = ManualCheck.objects.filter(news_prediction_id=news_prediction_id)
+        return queryset
+
+class ManualCheckListAPIView(generics.ListAPIView):
+    permission_classes = (AllowAny,)
+    queryset = ManualCheck.objects.all()
+    serializer_class = ManualCheckSerializer
+
+# class ManualCheckUpdateAPIView(generics.RetrieveUpdateDestroyAPIView):
+#     permission_classes = (AllowAny,)
+#     queryset = ManualCheck.objects.all()
+#     serializer_class = ManualCheckSerializer
+#     lookup_url_kwarg = 'id'
+
+class ManualCheckUpdateAPIView(generics.RetrieveUpdateDestroyAPIView):
+    permission_classes = (AllowAny,)
+    queryset = ManualCheck.objects.all()
+    serializer_class = ManualCheckSerializer
+    lookup_url_kwarg = 'id'
+
+    def update(self, request, *args, **kwargs):
+        instance = self.get_object()
+        validated_data = self.get_serializer().validate(request.data)
+        sentences_data = validated_data.pop('sentences', [])
+
+        for sentence_data in sentences_data:
+            sentence_id = sentence_data.get('id')
+            
+            if sentence_id:
+                try:
+                    sentence = Sentence.objects.get(id=sentence_id)
+                    sentence.verdict = sentence_data.get('verdict', sentence.verdict)
+                    sentence.sentence = sentence_data.get('sentence', sentence.sentence)
+                    sentence.save()
+                except Sentence.DoesNotExist:
+                    continue
+            else:
+                Sentence.objects.create(
+                    verdict=sentence_data.get('verdict'),
+                    sentence=sentence_data.get('sentence'),
+                    manual_check=instance
+                )
+
+        return super().update(request, *args, **kwargs)

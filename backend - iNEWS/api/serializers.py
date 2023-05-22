@@ -5,7 +5,7 @@ from rest_framework.validators import UniqueValidator
 from django.contrib.auth.password_validation import validate_password
 
 from rest_framework.authtoken.models import Token
-from fakenews.models import NewsPrediction, Comments,User,Sentiment,Linguistic
+from fakenews.models import NewsPrediction, Comments,User,Sentiment,Linguistic, ManualCheck, Sentence
 
 
 # Serializer to Get User Details using Django Token Authentication
@@ -76,3 +76,24 @@ class RegisterSerializer(serializers.ModelSerializer):
         user.save()
         
         return user
+
+class SentenceSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Sentence
+        fields = ['id','verdict', 'sentence']
+
+class ManualCheckSerializer(serializers.ModelSerializer):
+    sentences = SentenceSerializer(many=True, required=False)
+
+    class Meta:
+        model = ManualCheck
+        fields = ['id','verdict', 'evidence', 'sentences']
+
+    def create(self, validated_data):
+        sentences_data = validated_data.pop('sentences')
+        manual_check = ManualCheck.objects.create(**validated_data)
+
+        for sentence_data in sentences_data:
+            Sentence.objects.create(manual_check=manual_check, **sentence_data)
+
+        return manual_check

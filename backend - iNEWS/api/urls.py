@@ -14,4 +14,7 @@ urlpatterns = [
   path('sentiments/',views.SentimentAPIView.as_view()),
   path('linguistics/',views.LinguisticAPIView.as_view()),
   path('news-search/', views.NewsSearch.as_view(), name='news_search'),
+  path('manualchecklist/', views.ManualCheckListAPIView.as_view(), name='manualcheck-lists'),
+  path('<int:news_prediction_id>/manual-checks/', views.ManualCheckAPIView.as_view(), name='manual-check-list'),
+  path('manual-checks/<int:id>/', views.ManualCheckUpdateAPIView.as_view(), name='manualcheck-update'),
 ]
