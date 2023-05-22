@@ -89,7 +89,7 @@ Here are some screenshots of the iNEWS application:
   </tr>
 </table>
 
-## Screenshots (Web View)
+## Screenshots (Mobile View)
 
 <table>
   <tr>
