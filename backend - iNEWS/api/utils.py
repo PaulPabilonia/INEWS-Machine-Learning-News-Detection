@@ -469,7 +469,7 @@ def predict_url(url):
         summary = clean_article(text)
         print('summary:',summary)
         
-        verdict = predict_fake(summary)
+        verdict = predict_fake(article.title)
         return [str(article.title), verdict, summary, article.top_image, article.authors, published_date, article.keywords]
         
     except ValueError:
