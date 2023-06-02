@@ -84,10 +84,11 @@ class SentenceSerializer(serializers.ModelSerializer):
 
 class ManualCheckSerializer(serializers.ModelSerializer):
     sentences = SentenceSerializer(many=True, required=False)
+    news_prediction = NewsPredictionSerializers(many=False, read_only=True)
 
     class Meta:
         model = ManualCheck
-        fields = ['id','verdict', 'evidence', 'sentences']
+        fields = ['id','verdict', 'evidence', 'sentences','news_prediction']
 
     def create(self, validated_data):
         sentences_data = validated_data.pop('sentences')

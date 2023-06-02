@@ -379,12 +379,6 @@ class ManualCheckListAPIView(generics.ListAPIView):
     queryset = ManualCheck.objects.all()
     serializer_class = ManualCheckSerializer
 
-# class ManualCheckUpdateAPIView(generics.RetrieveUpdateDestroyAPIView):
-#     permission_classes = (AllowAny,)
-#     queryset = ManualCheck.objects.all()
-#     serializer_class = ManualCheckSerializer
-#     lookup_url_kwarg = 'id'
-
 class ManualCheckUpdateAPIView(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = (AllowAny,)
     queryset = ManualCheck.objects.all()
